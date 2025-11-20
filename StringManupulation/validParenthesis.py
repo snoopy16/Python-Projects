@@ -32,7 +32,7 @@ valid_dict = {
     "[": "]"
 }
 
-def isValid(s: str) -> bool:
+def isValidString(s: str) -> bool:
     # Even number of chars in parenthesis, square brackets and curly braces
     # create a map of allowed pairs
     # we find a pair in s, replace with empty space until we are left with string of length 0
@@ -60,4 +60,4 @@ def isValid(s: str) -> bool:
 
 
 s = input("Please provide a string with parenthesis, brackets, etc: ")
-print(isValid(s))
+print(isValidString(s))

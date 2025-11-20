@@ -16,7 +16,7 @@
 # Kevin's vowel beginning word = ANA
 # Here, ANA occurs twice in BANANA. Hence, Kevin will get 2 Points.
 
-from PossibleSubstrings import printSubstrings
+from StringManupulation.PossibleSubstrings import printSubstrings
 from collections import Counter
 
 vowels = ["a", "e", "i", "o", "u"]

@@ -10,8 +10,9 @@ def isPalindrome(x: int) -> bool:
         palindrome = True
     return palindrome
 
-try:
-    x = int(input("Enter a number: "))
-    print("Is Palindrome: ", isPalindrome(x))
-except ValueError as e:
-    print(e)
+if __name__ == '__main__':
+    try:
+        x = int(input("Enter a number: "))
+        print("Is Palindrome: ", isPalindrome(x))
+    except ValueError as e:
+        print(e)

@@ -12,10 +12,13 @@ Explanation: Because nums[0] + nums[1] == 9, we return [0, 1].
 import itertools
 
 def twoSum(nums, target):
+    # check if there are duplicates in the nums list
+    if len(nums) != len(set(nums)):
+        raise ValueError("Duplicate values found in input list")
     indices = 2
     # Get combinations of elements of size 2 then find the target sum
     combos = list(itertools.combinations(nums, indices))
-    print(combos)
+    #print(combos)
     for c in combos:
         if sum(c) == target:
             # identify the indices
